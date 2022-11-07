@@ -32,7 +32,7 @@ function App() {
 
   return (
     <BrowserRouter>
-      <NavComp title="Text Utils" aboutText="About" mode={Mode} toggleMode={toggleMode}/>
+      <NavComp mode={Mode} toggleMode={toggleMode}/>
       <Alert alert={alert}/>
       <Routes>
         <Route path="/" element={

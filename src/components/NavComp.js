@@ -12,7 +12,7 @@ function NavComp(props) {
       <nav className={`navbar navbar-expand-lg navbar-${props.mode} bg-${props.mode}`}>
       <div className="container-fluid">
         <Link className="navbar-brand" to="/">
-          {props.title}
+          TextUtils
         </Link>
         <button
           className="navbar-toggler"
@@ -40,7 +40,7 @@ function NavComp(props) {
           </ul>
           <div className={`form-check form-switch text-${props.mode==='light'? 'Dark' : 'light'}`}>
             <input className="form-check-input" type="checkbox" onClick={props.toggleMode} role="switch" id="flexSwitchCheckDefault"/>
-            <label className="form-check-label" for="flexSwitchCheckDefault">Dark Mode</label>
+            <label className="form-check-label" htmlFor="flexSwitchCheckDefault">Dark Mode</label>
           </div>
         </div>
       </div>
